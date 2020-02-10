@@ -47,6 +47,18 @@ exports.createPages = async ({ graphql, actions }) => {
                         }
                     }
                 }
+                allAbouts {
+                    edges {
+                        node {
+                            about_title
+                            about_preview_description
+                            about_author
+                            about_author_image
+                            about_author_annotation
+                            about_body
+                        }
+                    }
+                }
             }
         }
     `)
