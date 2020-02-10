@@ -5,7 +5,6 @@ import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 // import dimensions from "styles/dimensions";
 import { RichText } from "prismic-reactjs";
-import Layout from "components/Layout";
 
 const AboutTitle = styled("h1")`
     margin-bottom: 1em;
@@ -51,7 +50,7 @@ const About = ({ about, meta }) => (
                 },
             ].concat(meta)}
         />
-        <Layout>
+        <>
             <AboutTitle>
                 About {about.about_author}
             </AboutTitle>
@@ -61,7 +60,7 @@ const About = ({ about, meta }) => (
             <div>
               {RichText.render(about.about_preview_description)}
             </div>
-        </Layout>
+        </>
     </>
 );
 

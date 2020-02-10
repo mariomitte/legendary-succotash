@@ -8,7 +8,6 @@ import colors from "styles/colors";
 import dimensions from "styles/dimensions";
 import Button from "components/_ui/Button";
 import About from "components/About";
-import Layout from "components/Layout";
 import ProjectCard from "components/ProjectCard";
 
 const Hero = styled("div")`
@@ -178,9 +177,7 @@ export default ({ data }) => {
     if (!doc || !projects) return null;
 
     return (
-        <Layout>
-            <RenderBody home={doc.node} projects={projects} meta={meta}/>
-        </Layout>
+        <RenderBody home={doc.node} projects={projects} meta={meta}/>
     )
 }
 

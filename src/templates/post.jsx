@@ -6,7 +6,6 @@ import { graphql } from 'gatsby';
 import { RichText } from "prismic-reactjs";
 import styled from "@emotion/styled";
 import colors from "styles/colors";
-import Layout from "components/Layout";
 
 const PostHeroContainer = styled("div")`
     max-height: 500px;
@@ -133,7 +132,7 @@ const Post = ({ post, meta }) => {
                     },
                 ].concat(meta)}
             />
-            <Layout>
+            <>
                 <PostCategory>
                     {RichText.render(post.post_category)}
                 </PostCategory>
@@ -159,7 +158,7 @@ const Post = ({ post, meta }) => {
                 <PostBody>
                     {RichText.render(post.post_body)}
                 </PostBody>
-            </Layout>
+            </>
         </>
     )
 }

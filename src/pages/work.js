@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import styled from "@emotion/styled";
-import Layout from "components/Layout";
 import ProjectCard from "components/ProjectCard";
 
 const WorkTitle = styled("h1")`
@@ -50,7 +49,7 @@ const Work = ({ projects, meta }) => (
                 },
             ].concat(meta)}
         />
-        <Layout>
+        <>
             <WorkTitle>
                 Work
             </WorkTitle>
@@ -66,7 +65,7 @@ const Work = ({ projects, meta }) => (
                     />
                 ))}
             </>
-        </Layout>
+        </>
     </>
 );
 
@@ -111,4 +110,3 @@ export const query = graphql`
         }
     }
 `
-

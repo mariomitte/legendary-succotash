@@ -4,7 +4,6 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 import dimensions from "styles/dimensions";
-import Layout from "components/Layout";
 import PostCard from "components/PostCard";
 
 const BlogTitle = styled("h1")`
@@ -67,7 +66,7 @@ const Blog = ({ posts, meta }) => (
                 },
             ].concat(meta)}
         />
-        <Layout>
+        <>
             <BlogTitle>
                 Blog
             </BlogTitle>
@@ -84,7 +83,7 @@ const Blog = ({ posts, meta }) => (
                     />
                 ))}
             </BlogGrid>
-        </Layout>
+        </>
     </>
 );
 
@@ -131,4 +130,3 @@ export const query = graphql`
         }
     }
 `
-

@@ -6,7 +6,6 @@ import colors from "styles/colors";
 import { Link, graphql } from 'gatsby';
 import { RichText } from "prismic-reactjs";
 import Button from "components/_ui/Button";
-import Layout from "components/Layout";
 
 const ProjectHeroContainer = styled("div")`
     background: ${colors.grey200};
@@ -91,7 +90,7 @@ const Project = ({ project, meta }) => {
                     },
                 ].concat(meta)}
             />
-            <Layout>
+            <>
                 <ProjectTitle>
                     {RichText.render(project.project_title)}
                 </ProjectTitle>
@@ -108,7 +107,7 @@ const Project = ({ project, meta }) => {
                         </Button>
                     </WorkLink>
                 </ProjectBody>
-            </Layout>
+            </>
         </>
     )
 }
