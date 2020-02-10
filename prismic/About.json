@@ -33,7 +33,7 @@
       "config" : {
         "constraint" : { },
         "thumbnails" : [ ],
-        "label" : "about hero image"
+        "label" : "about author image"
       }
     },
     "about_author_annotation" : {
@@ -41,7 +41,7 @@
       "config" : {
         "single" : "heading6, strong, em, hyperlink",
         "allowTargetBlank" : true,
-        "label" : "about hero annotation"
+        "label" : "about author annotation"
       }
     },
     "about_body" : {
