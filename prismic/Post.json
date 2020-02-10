@@ -30,8 +30,8 @@
     "post_author" : {
       "type" : "Select",
       "config" : {
-        "options" : [ "Prist Team", "Marguerite Roth" ],
-        "default_value" : "Prist Team",
+        "options" : [ "Adventures Team", "Mario Tkalac" ],
+        "default_value" : "Adventures Team",
         "label" : "post author"
       }
     },
