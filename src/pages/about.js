@@ -69,8 +69,6 @@ export default ({ data }) => {
     const meta = data.site.siteMetadata;
     if (!about) return null;
 
-    console.log('about', about)
-
     return (
         <About about={about[0].node} meta={meta}/>
     )
