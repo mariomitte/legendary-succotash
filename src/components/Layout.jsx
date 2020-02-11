@@ -8,6 +8,7 @@ import typeStyles from 'styles/typography';
 import dimensions from "styles/dimensions";
 import Footer from "components/Footer";
 import Header from "components/Header";
+import CookieHubBanner from "../utils/CookieHubBanner";
 import 'styles/fonts.scss';
 
 const LayoutContainer = styled.div`
@@ -51,6 +52,11 @@ const Layout = ({ children }) => (
                         {children}
                     </main>
                     <Footer />
+                </div>
+                <div className="cookiehub">
+                    <CookieHubBanner
+                        googleTrackingId="UA-158068333-1"
+                        cookieHubId="c37c492f"/>
                 </div>
             </LayoutContainer>
         )}
