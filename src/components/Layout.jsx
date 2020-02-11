@@ -52,11 +52,10 @@ const Layout = ({ children }) => (
                         {children}
                     </main>
                     <Footer />
-                </div>
-                <div className="cookiehub">
                     <CookieHubBanner
-                        googleTrackingId="UA-158068333-1"
-                        cookieHubId="c37c492f"/>
+                      googleTrackingId="UA-158068333-1"
+                      cookieHubId="c37c492f"
+                    />
                 </div>
             </LayoutContainer>
         )}

@@ -22,9 +22,16 @@ const CookieHubBanner = ({ googleTrackingId, cookieHubId }) => {
                 },
                 {
                     type: "text/javascript",
-                    src: cookieHubUrl
+                    innerHTML:
+                        `var cpm = {};
+                        (function(h,u,b){
+                        var d=h.getElementsByTagName("script")[0],e=h.createElement("script");
+                        e.async=true;e.src='`+cookieHubUrl+`';
+                        e.onload=function(){u.cookiehub.load(b);}
+                        d.parentNode.insertBefore(e,d);
+                        })(document,window,cpm);`
                 },
-                { 
+                {
                     type: "text/javascript",
                     innerHTML:
                         `window.addEventListener("load", function() {
